@@ -7,7 +7,7 @@ This project implements Word2Vec models (CBOW and Skip-gram) to learn word embed
 The main script `m25mac003_prob1.py` performs the following tasks:
 1.  **Data Collection**:
     -   **Web Scraping**: Scrapes text from IIT Jodhpur websites (`iitj.ac.in` and mathematics department) and faculty pages using `requests` and `BeautifulSoup`.
-    -   **PDF Extraction**: Extracts text from PDF files located in the `pdf/` directory using `pdfplumber`.
+    -   **PDF Extraction**: Extracts text from PDF files located in the `pdf/` directory using `pdfplumber`, download the upoloaded pdfs of academic regulations and research paper and save it in "pdf" folder to run.
 2.  **Preprocessing**:
     -   Cleans text by removing dates, times, special characters, and extra spaces.
     -   Tokenizes text and removes stopwords (standard English + domain-specific: "shall", "may", "institute", "indian", "technology", "jodhpur", "iit", "also").
