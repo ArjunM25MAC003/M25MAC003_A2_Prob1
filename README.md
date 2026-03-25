@@ -65,5 +65,58 @@ pip install numpy matplotlib nltk beautifulsoup4 scikit-learn gensim pdfplumber 
 -   **CBOW**: Vector Size: 200, Window: 8, Negative Sampling: 10
 -   **Skip-gram**: Vector Size: 100, Window: 5, Negative Sampling: 5
 
-## Author
-M25MAC003
+# Character-Level Name Generation using RNN Variants
+
+This project implements and compares three different Recurrent Neural Network (RNN) architectures for character-level name generation:
+1.  **Vanilla RNN**
+2.  **Bidirectional LSTM (BLSTM)**
+3.  **RNN with Attention**
+
+The objective is to train these models on a dataset of names and generate new, unique names. The models are evaluated based on training loss and qualitative metrics such as **Novelty Rate** and **Diversity**.
+
+## Project Structure
+
+-   `m25mac003_prob2.py`: The main Python script containing the implementation of the models, training loop, generation logic, and evaluation metrics.
+-   `TrainingNames.txt`: A text file containing the dataset of names used for training.
+-   `requirements.txt`: A list of Python dependencies required to run the project.
+
+## Requirements
+
+-   Python 3.x
+-   PyTorch
+
+## Installation
+
+1.  **Clone or download** the repository to your local machine.
+2.  **Navigate** to the project directory:
+    ```bash
+    cd path/to/M25MAC003_prob2
+    ```
+3.  **Install the required dependencies** using pip:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+1.  Ensure that the `TrainingNames.txt` file is located in the same directory as the script.
+2.  Run the main script:
+    ```bash
+    python m25mac003_prob2.py
+    ```
+
+## How It Works
+
+The script performs the following steps for each model:
+1.  **Data Preparation**: Reads names from `TrainingNames.txt`, processes them (lowercasing), and builds a character vocabulary.
+2.  **Model Initialization**: Initializes the specific RNN variant (Vanilla, BLSTM, or Attention).
+3.  **Training**: Trains the model for a specified number of epochs (default is 20), printing the loss at each epoch.
+4.  **Generation**: Generates a set of new names using the trained model.
+5.  **Evaluation**: Calculates and prints:
+    -   **Novelty Rate**: The proportion of generated names that are not in the training set.
+    -   **Diversity**: The ratio of unique generated names to total generated names.
+
+## Output
+
+The script will output the training progress (loss per epoch) and evaluation metrics for each model variant directly to the console.
+
