@@ -1,0 +1,96 @@
+
+Vanilla RNN
+Total Parameters: 37393
+Model Size: 0.1426 MB
+Epoch 1/20, Loss: 0.7834452209472657
+Epoch 2/20, Loss: 0.5311292185634374
+Epoch 3/20, Loss: 0.5235430541038513
+Epoch 4/20, Loss: 0.520310746371746
+Epoch 5/20, Loss: 0.5170344583392144
+Epoch 6/20, Loss: 0.5158636533021926
+Epoch 7/20, Loss: 0.5161909854412079
+Epoch 8/20, Loss: 0.5140128009021282
+Epoch 9/20, Loss: 0.534931788623333
+Epoch 10/20, Loss: 0.5161470297724009
+Epoch 11/20, Loss: 0.5151692081391811
+Epoch 12/20, Loss: 0.5141702165007591
+Epoch 13/20, Loss: 0.5183895564377308
+Epoch 14/20, Loss: 0.5150152192413807
+Epoch 15/20, Loss: 0.5132285918295384
+Epoch 16/20, Loss: 0.5148215011060238
+Epoch 17/20, Loss: 0.5161546876579524
+Epoch 18/20, Loss: 0.5164255218356848
+Epoch 19/20, Loss: 0.5152199459373951
+Epoch 20/20, Loss: 0.5182059288620949
+Novelty Rate: 1.0000
+Diversity: 0.3000
+Sample Names: ['Rav', 'Saaditya', 'Rtya', 'Rarav', 'Raanvi', 'Aavhaan', 'Aaanan', 'Sad', 'Athadhtya', 'Sadiya']
+
+BLSTM
+Total Parameters: 270737
+Model Size: 1.0328 MB
+Epoch 1/20, Loss: 0.17258545956586022
+Epoch 2/20, Loss: 0.001548476211784873
+Epoch 3/20, Loss: 0.0005189888894528849
+Epoch 4/20, Loss: 0.00023614955034281592
+Epoch 5/20, Loss: 0.00012157644714898197
+Epoch 6/20, Loss: 6.665625526875373e-05
+Epoch 7/20, Loss: 3.780263282533269e-05
+Epoch 8/20, Loss: 2.1903830120209023e-05
+Epoch 9/20, Loss: 1.2808739464617246e-05
+Epoch 10/20, Loss: 7.553746155508634e-06
+Epoch 11/20, Loss: 4.488936037091662e-06
+Epoch 12/20, Loss: 2.673777213090034e-06
+Epoch 13/20, Loss: 1.5897737591217265e-06
+Epoch 14/20, Loss: 9.4957609368862e-07
+Epoch 15/20, Loss: 5.605044769509959e-07
+Epoch 16/20, Loss: 3.2614218460480515e-07
+Epoch 17/20, Loss: 1.853427390230422e-07
+Epoch 18/20, Loss: 1.1402140108174308e-07
+Epoch 19/20, Loss: 5.143270204310824e-08
+Epoch 20/20, Loss: 2.500641746028265e-08
+Novelty Rate: 1.0000
+Diversity: 0.2200
+Sample Names: ['Athav', 'Kav', 'Athadh', 'Kri', 'Kri', 'Shaurjun', 'Shaun', 'Atha', 'Athadh', 'Kadhya']
+
+Attention RNN
+Total Parameters: 37522
+Model Size: 0.1431 MB
+Epoch 1/20, Loss: 1.4064932671487331
+Epoch 2/20, Loss: 0.7001627889275551
+Epoch 3/20, Loss: 0.5207570931613446
+Epoch 4/20, Loss: 0.4623379612714052
+Epoch 5/20, Loss: 0.4319480701237917
+Epoch 6/20, Loss: 0.4172250891774893
+Epoch 7/20, Loss: 0.396016048938036
+Epoch 8/20, Loss: 0.38704373644292356
+Epoch 9/20, Loss: 0.3729889056533575
+Epoch 10/20, Loss: 0.3597019290626049
+Epoch 11/20, Loss: 0.38611412318050864
+Epoch 12/20, Loss: 0.3488354027569294
+Epoch 13/20, Loss: 0.324661901935935
+Epoch 14/20, Loss: 0.31340346969664096
+Epoch 15/20, Loss: 0.3061047023460269
+Epoch 16/20, Loss: 0.297632349871099
+Epoch 17/20, Loss: 0.2896043609827757
+Epoch 18/20, Loss: 0.2834848503768444
+Epoch 19/20, Loss: 0.27862621434777973
+Epoch 20/20, Loss: 0.2725089025199413
+Novelty Rate: 1.0000
+Diversity: 0.1800
+Sample Names: ['Aashya', 'Aadhyr', 'Aarrv', 'Aari', 'Aaravn', 'Aavdhya', 'Aadi', 'Aashya', 'Aadhyan', 'Aadhyr']
+
+FINAL COMPARISON
+Vanilla RNN: Novelty = 1.0000, Diversity = 0.3000
+BLSTM: Novelty = 1.0000, Diversity = 0.2200
+Attention RNN: Novelty = 1.0000, Diversity = 0.1800
+
+  QUALITATIVE ANALYSIS 
+
+Sample Generated Names (First 20):
+['Aashya', 'Aadhyr', 'Aarrv', 'Aari', 'Aaravn', 'Aavdhya', 'Aadi', 'Aashya', 'Aadhyan', 'Aadhyr', 'Aavshya', 'Aanan', 'Aanav', 'Aadhyr', 'Aadhyr', 'Aadhyr', 'Aadhyan', 'Aashya', 'Aadhyan', 'Aanan']
+
+Common Failure Modes
+Repetition Errors (examples): ['Aanavya', 'Aanarya', 'Aananya']
+Too Short Names (examples): []
+Duplicate Names (examples): ['Aashya', 'Aadhyr', 'Aari', 'Aaravn', 'Aavdhya']
