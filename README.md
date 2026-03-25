@@ -1,4 +1,4 @@
-# IIT Jodhpur Word Embeddings Project
+# PROBLEM 1 IIT Jodhpur Word Embeddings Project
 
 This project implements Word2Vec models (CBOW and Skip-gram) to learn word embeddings from textual data collected from IIT Jodhpur sources. It is part of the M25MAC003 assignment (Problem 1).
 
@@ -65,7 +65,7 @@ pip install numpy matplotlib nltk beautifulsoup4 scikit-learn gensim pdfplumber 
 -   **CBOW**: Vector Size: 200, Window: 8, Negative Sampling: 10
 -   **Skip-gram**: Vector Size: 100, Window: 5, Negative Sampling: 5
 
-# Character-Level Name Generation using RNN Variants
+# PROBLEM 2-Character-Level Name Generation using RNN Variants
 
 This project implements and compares three different Recurrent Neural Network (RNN) architectures for character-level name generation:
 1.  **Vanilla RNN**
